@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moazzam — Financial Analyst &amp; Modeler</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #EDF0E6;
+    --panel: #E4E8DA;
+    --ink: #1C2B39;
+    --ink-soft: #4B5A63;
+    --rule: #C7CDBE;
+    --gold: #8A6D2F;
+    --gold-soft: #A9885A;
+    --serif: 'Fraunces', serif;
+    --sans: 'IBM Plex Sans', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  a{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;}
+  a:hover{border-bottom-color:var(--gold-soft);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+
+  header.top{
+    padding:48px 0 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:12px;
+    border-bottom:1px solid var(--rule);
+  }
+  header.top .name{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:22px;
+    letter-spacing:0.01em;
+  }
+  header.top nav{
+    font-size:14px;
+    display:flex;
+    gap:20px;
+    color:var(--ink-soft);
+  }
+  header.top nav a{color:var(--ink-soft);}
+
+  .hero{
+    padding:64px 0 48px;
+    border-bottom:1px solid var(--rule);
+  }
+  .hero .role{
+    font-family:var(--mono);
+    font-size:13px;
+    color:var(--gold);
+    margin:0 0 18px;
+  }
+  .hero h1{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(32px, 5vw, 46px);
+    line-height:1.15;
+    margin:0 0 22px;
+    max-width:14ch;
+  }
+  .hero p{
+    max-width:56ch;
+    color:var(--ink-soft);
+    font-size:17px;
+    margin:0;
+  }
+
+  section{padding:44px 0;border-bottom:1px solid var(--rule);}
+  section:last-of-type{border-bottom:none;}
+  section h2{
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:14px;
+    text-transform:none;
+    letter-spacing:0.02em;
+    color:var(--ink-soft);
+    margin:0 0 26px;
+  }
+
+  .figures{display:flex;flex-direction:column;}
+  .figure-row{
+    display:flex;
+    justify-content:space-between;
+    gap:24px;
+    padding:14px 0;
+    border-top:1px solid var(--rule);
+  }
+  .figure-row:first-child{border-top:none;}
+  .figure-row .label{color:var(--ink-soft);font-size:15px;}
+  .figure-row .value{
+    font-family:var(--mono);
+    font-size:15px;
+    text-align:right;
+    max-width:60%;
+  }
+
+  .projects{display:flex;flex-direction:column;}
+  .project{
+    padding:26px 0;
+    border-top:1px solid var(--rule);
+  }
+  .project:first-child{border-top:none;}
+  .project h3{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:20px;
+    margin:0 0 8px;
+  }
+  .project p{
+    margin:0 0 12px;
+    color:var(--ink-soft);
+    font-size:15px;
+    max-width:58ch;
+  }
+  .project .links{
+    display:flex;
+    gap:18px;
+    font-family:var(--mono);
+    font-size:13px;
+  }
+
+  .skills p{
+    max-width:62ch;
+    color:var(--ink-soft);
+    font-size:15.5px;
+  }
+  .skills strong{color:var(--ink);font-weight:600;}
+
+  footer{
+    padding:40px 0 60px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  footer a{color:var(--ink-soft);}
+
+  @media (max-width:520px){
+    header.top{padding-top:32px;}
+    .hero{padding:44px 0 36px;}
+    .figure-row{flex-direction:column;gap:4px;}
+    .figure-row .value{text-align:left;max-width:100%;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="top">
+    <span class="name">Moazzam</span>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="mailto:you@email.com">Email</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="role">Financial Analyst &amp; Modeler</p>
+    <h1>I turn financial statements into decisions.</h1>
+    <p>ACCA affiliate finishing my final paper, with audit and tax experience and a growing focus on financial modeling, valuation, and FP&amp;A. This page collects the analysis work I've built to show how I think, not just what I know.</p>
+  </section>
+
+  <section>
+    <h2>At a glance</h2>
+    <div class="figures">
+      <div class="figure-row">
+        <span class="label">ACCA</span>
+        <span class="value">Affiliate — final paper in progress</span>
+      </div>
+      <div class="figure-row">
+        <span class="label">Education</span>
+        <span class="value">OBU BSc Applied Accounting — RAP submitted, result Feb 2027</span>
+      </div>
+      <div class="figure-row">
+        <span class="label">Experience</span>
+        <span class="value">Audit &amp; tax, SmartWay Accounting and Taxation Services</span>
+      </div>
+      <div class="figure-row">
+        <span class="label">Based in</span>
+        <span class="value">Lahore, Pakistan</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="project">
+        <h3>Intel Corp. — DCF Valuation</h3>
+        <p>A three-statement model and discounted cash flow valuation, with a sensitivity analysis on margin and discount-rate assumptions.</p>
+        <div class="links">
+          <a href="projects/intel-dcf/model.xlsx">View model →</a>
+          <a href="projects/intel-dcf/memo.pdf">Read memo →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Comparable Company Analysis</h3>
+        <p>A trading comps screen benchmarking valuation multiples against a defined peer set, with commentary on where the gaps come from.</p>
+        <div class="links">
+          <a href="projects/comps/model.xlsx">View model →</a>
+          <a href="projects/comps/memo.pdf">Read memo →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>KPI Dashboard — Power BI</h3>
+        <p>An interactive dashboard turning historical financials into a trackable set of performance indicators for a single company.</p>
+        <div class="links">
+          <a href="projects/dashboard/dashboard.pbix">View dashboard →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <p><strong>Modeling &amp; valuation</strong> — three-statement modeling, DCF, comparable company analysis, scenario &amp; sensitivity analysis.<br>
+    <strong>Tools</strong> — Advanced Excel, Power BI (working toward PL-300).<br>
+    <strong>Accounting &amp; compliance</strong> — financial statement preparation, corporate tax computation, UAE regulatory compliance.</p>
+  </section>
+
+  <footer>
+    <span>Moazzam · Lahore, Pakistan</span>
+    <span><a href="mailto:you@email.com">you@email.com</a> · <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></span>
+  </footer>
+
+</div>
+
+</body>
+</html>
